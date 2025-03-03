@@ -1,75 +1,155 @@
-<header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Amor para Naiomi🌷</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('https://photos.app.goo.gl/1rqeMCMvidaze2yA6');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ff69b4;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .letter {
+            display: none;
+            background-color: #ffccff;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        .letter button {
+            background-image: url('https://photos.app.goo.gl/t12eSPvKRHSoMgsv9');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .content {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+        }
+        .content::before, .content::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .content::before {
+            left: -20px;
+        }
+        .content::after {
+            right: -20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página de Amor para Naiomi🌷</h1>
+        <input type="text" id="nameInput" placeholder="Introduce tu nombre">
+        <button onclick="showLetter()">Ingresar🌷</button>
+        <div class="letter" id="letter">
+            <button onclick="showContent()"></button>
+            <div class="content" id="content">
+                <p>Querida Naomi, el amor de mi vida,</p>
+                <p>Desde el momento en que te conocí, supe que eras alguien especial. Tu sonrisa ilumina mis días y tu risa es la melodía que alegra mi corazón. Cada momento contigo es un tesoro que guardo con cariño en mi memoria.</p>
+                <p>Quiero que sepas que te amo con todo mi ser, por favor perdóname por los errores que he cometido. Te prometo con todo mi corazón que ya no volverá a ocurrir. Sé que no te quiero perder y que te amo, te noto mal, yo sé el daño que causé, pero también sé que te voy a amar hasta después de la muerte. Mi amor por ti es tan profundo como el océano y tan vasto como el cielo. Eres mi compañera, mi confidente y mi mejor amiga. No puedo imaginar mi vida sin ti a mi lado.</p>
+                <p>Gracias por ser quien eres, por tu amor incondicional y por llenar mi vida de alegría y felicidad. Eres mi inspiración y mi razón para sonreír cada día.</p>
+                <p>Con todo mi amor,</p>
+                <p>Davicito</p>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+                <h2>Galería de Recuerdos</h2>
+                <div class="gallery">
+                    <img src="https://photos.app.goo.gl/h3uVUDZMANeDn7Vy5" alt="Descripción del recuerdo 1">
+                    <img src="https://photos.app.goo.gl/m9Bq42upRzs5SuWu8" alt="Descripción del recuerdo 2">
+                    <img src="https://photos.app.goo.gl/FKprQSAFFttSBjbm7" alt="Descripción del recuerdo 3">
+                    <img src="https://photos.app.goo.gl/jHDnDnoGrmaGRNXT8" alt="Descripción del recuerdo 4">
+                    <img src="https://photos.app.goo.gl/sHtbaxoUGYsKM9wv5" alt="Descripción del recuerdo 5">
+                    <img src="https://photos.app.goo.gl/sBks1E8stKCWLpDJ9" alt="Descripción del recuerdo 6">
+                    <img src="https://photos.app.goo.gl/oT3st6o6GijEGbrn8" alt="Descripción del recuerdo 7">
+                </div>
 
-# GitHub Pages
+                <p>Querida Naomi,</p>
+                <p>Si aceptas perdonarme, de verdad quiero que sepas que no te voy a fallar y quiero que sepas que no voy a cometer otra estupidez. Con esta cartita te demuestro todo lo que estoy dispuesto a hacer por recuperar a la niña que tanto amo. Si así lo deseas, estoy aquí para apoyarte y estar contigo en las buenas y en las malas, mi niña. Estoy emocionado por todo lo que el futuro nos depara y por todos los momentos maravillosos que aún están por venir. Te amo más de lo que las palabras pueden expresar y siempre estaré aquí para ti.</p>
+                <p>Con todo mi corazón,</p>
+                <p>Tu negrito, Leito❤️‍🩹</p>
+            </div>
+        </div>
+    </div>
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+    <script>
+        function showLetter() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                document.getElementById('letter').style.display = 'block';
+            }
+        }
 
-</header>
-
-<!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
--->
-
-## Welcome
-
-With GitHub Pages, you can host project blogs, documentation, resumes, portfolios, or any other static content you'd like. Your GitHub repository can easily become its own website. In this course, we'll show you how to set up your own site or blog using GitHub Pages.
-
-- **Who is this for**: Beginners, students, project maintainers, small businesses.
-- **What you'll learn**: How to build a GitHub Pages site.
-- **What you'll build**: We'll build a simple GitHub Pages site with a blog. We'll use [Jekyll](https://jekyllrb.com), a static site generator.
-- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course takes less than one hour to complete.
-
-In this course, you will:
-
-1. Enable GitHub Pages
-2. Configure your site
-3. Customize your home page
-4. Create a blog post
-5. Merge your pull request
-
-### How to start this course
-
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'github-pages',
-  owner: '@me',
-  name: 'skills-github-pages',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=github-pages&owner=%40me&name=skills-github-pages&description=My+clone+repository&visibility=public)
-
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+        function showContent() {
+            document.getElementById('content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
